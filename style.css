@@ -1,5 +1,5 @@
 /* Hand coded with love and lots of coffee by Thomas Simon
-Last update 2019-11-15 */
+Last update 2019-11-23 */
 /* Reset page position on screen */
 * {
   margin: 0;
@@ -62,6 +62,15 @@ a:hover {
 a:active {
   color: #0084b8;
   }
+.highlight {
+  background: -webkit-linear-gradient(-90deg, #592f8a 0%, #8370d8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.highlight-2 {
+  color: white;
+  background-image: linear-gradient(-90deg, #70c1d8 0%,#1badd6 100%);
+}  
 #navbar {
     position: sticky;
     overflow: hidden;
@@ -132,6 +141,7 @@ text-align: center !important;
 #about p {
   padding-bottom: 5px;
   padding-left: 2%;
+  padding-right: 2%;
   margin-left: 2%;
   text-align: justify !important;
 }
