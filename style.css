@@ -1,5 +1,5 @@
 /* Hand coded with love and lots of coffee by Thomas Simon
-Last update 2019-11-23 */
+Last update 2019-11-24 */
 /* Reset page position on screen */
 * {
   margin: 0;
@@ -64,6 +64,7 @@ a:active {
   }
 .highlight {
   background: -webkit-linear-gradient(-90deg, #592f8a 0%, #8370d8 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -410,7 +411,7 @@ footer p {
         word-wrap: break-word;
         }    
   #about {
-        height: 100vh;
+        height: auto;
         width: 100%;
         word-wrap: break-word;
         }    
@@ -418,6 +419,9 @@ footer p {
       padding-bottom: 5px;
       text-align: left !important;
       }
+  .hide {
+      display: none;
+     }    
   #work .read-more-button{
       font-family: 'Libre Franklin', sans-serif !important;
       padding-top: 5px;
@@ -474,17 +478,23 @@ footer p {
         }
 }
 @media (max-width: 392px) {
+  .hide {
+    display: none;
+ }
   .footer {
         font-size: 36px !important;
     } 
 }
-@media (max-width: 3338px) {
+@media (max-width: 338px) {
+  .hide {
+    display: none;
+ }
   .footer {
         font-size: 34px !important;
     } 
 }
 /* Tablet average resolutions */
-@media (min-width: 640px) and (max-width: 1200px){
+@media (min-width: 640px) and (max-width: 1368px){
   * {
     margin: 0;
     padding: 0;
@@ -495,6 +505,9 @@ footer p {
       width: auto;
       overflow-x: hidden;
   }
+  .hide {
+    display: none;
+ }
   #navbar {
     height: 13%;
     }
@@ -532,6 +545,8 @@ footer p {
      height: auto;
      width: 100%;
      padding-left: 2%;
+     padding-top: 5%;
+     padding-bottom: 5%;
      word-wrap: break-word;
      }
   #work p.text-content {
@@ -547,7 +562,9 @@ footer p {
         word-wrap: break-word;
         }    
   #about {
-        height: 100vh;
+        padding-top: 5%;
+        padding-bottom: 5%;   
+        height: auto;
         width: 100%;
         word-wrap: break-word;
         }   
@@ -582,6 +599,7 @@ footer p {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
+      padding-top: 5%;
       height: auto;
       width: 100%;
       }
